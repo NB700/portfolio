@@ -18,7 +18,7 @@
     <a href="contact.html" class="tab">Contact</a>
 
     <div>
-      <a href="https://github.com/Acid-ra1n" target="_blank"><img src="icons/github-white.png"></a>
+      <a href="https://github.com/nb700" target="_blank"><img src="icons/github-white.png"></a>
       <a href="https://www.linkedin.com/in/noah-berhanu-2a1678293/" target="_blank"><img src="icons/linkedin.png"></a> 
     
     </div>
@@ -29,40 +29,63 @@
   <main>
 
  <div id="project-main">  
-    <div id="second">
-        <h1>Inventory Tracking</h1>
-        <img src="images\inventory-tracking-1.png" alt="Computer Components">
-        <img src="images\inventory-tracking-2.png" alt="Computer Products">
-        <p>
-          This is an inventory tracking system that was built with the java spring framework. I worked on implementing functionality on creating, deleting, and updating parts or products in the application. System displays the relationships between parts and products.
-        </p>
-      <p style="line-height: 27px;">
-      Access the project source code in the following link: <a href="https://github.com/Acid-ra1n/Inventory-Tracking" target="_blank">Inventory Tracking</a>
+    <div class="project-block">
+      <h2>Vacation Planner</h2>
+      <div class="slider">
+        <button class="arrow left">&#10094;</button>
+        
+        <img src="images\Vacation-planner-1.jpg" style="width: 150px; height: 300px"/>
+
+        <button class="arrow right">&#10095;</button>
+      </div>
+      <p>
+        Developed a mobile Vacation Planner application that enables users to organize vacations and excursions through a centralized, user-friendly interface. Implemented full CRUD functionality, date-based alerts, notification features, and sharing capabilities to help users manage travel plans. <br><br>
+        Access the project source code in the following link: <a href="https://github.com/NB700/Trip-Planner" target="_blank">Vacation Planner</a>
       </p>
     </div>
 
-    <div id="first">
-      <h1>To-do List Project</h1>
-      <img src="images/todo_list.png" alt="To-do list">
-      <p>I built a to-do list application that allows the addition and deletion of tasks to a list. The user is also able to apply notifications by settting a time and date. I used HTML, CSS, and JavaScript to build this application. 
-      </p>
-      <p style="line-height: 27px;">Access the project in the following link: <a href="https://acid-ra1n.github.io/todo-list/" target="_blank">To-do List</a>
-<br>
-      Access the project source code in the following link: <a href="https://github.com/Acid-ra1n/todo-list" target="_blank">To-do List</a>
-<br>
-      Access case study in the following pdf: <a href="documents/todo-list_case-study.pdf" target="_blank" type="pdf">Case Study</a>
+    <div class="project-block">
+      <h2>Inventory Tracking</h2>
+      <div class="slider">
+        <button class="arrow left">&#10094;</button>
+        
+        <img src="images\Inventory-tracking-1.png" />
+
+        <button class="arrow right">&#10095;</button>
+      </div>
+      <p>
+        This is an inventory tracking system that was built with the java spring framework. I worked on implementing functionality on creating, deleting, and updating parts or products in the application. System displays the relationships between parts and products. <br><br>
+        Access the project source code in the following link: <a href="https://github.com/nb700/Inventory-Tracking" target="_blank">Inventory Tracking</a>
       </p>
     </div>
 
-    <div id="second">
-        <h1>Book Website</h1>
-        <img src="images\stoytelling site.png" alt="Book Website">
-        <p>
-          This is a book website that was built with HTML, CSS, Javascript, and Bootstrap. I worked on implementing a navigation bar at the top of the website, implementing a countdown timer, and adding a mystery book genre page.
-        </p>
-      <p style="line-height: 27px;">Access the project in the following link: <a href="https://misfeed.github.io/JS-Milestone/" target="_blank">Book Website</a>
-    <br>
-      Access the project source code in the following link: <a href="https://github.com/Misfeed/JS-Milestone" target="_blank">Book Website</a>
+    <div class="project-block">
+      <h2>To-do List</h2>
+      <div class="slider">
+        <button class="arrow left">&#10094;</button>
+        
+        <img src="images/Todo-list-1.png" />
+
+        <button class="arrow right">&#10095;</button>
+      </div>
+      <p>
+        I built a to-do list application that allows the addition and deletion of tasks to a list. The user is also able to apply notifications by settting a time and date. I used HTML, CSS, and JavaScript to build this application. <br><br>
+        Access the project source code in the following link: <a href="https://github.com/nb700/todo-list" target="_blank">To-do List</a>
+      </p>
+    </div>
+
+    <div class="project-block">
+      <h2>Book Website</h2>
+      <div class="slider">
+        <button class="arrow left">&#10094;</button>
+        
+        <img src="images/Book-website-1.png" />
+
+        <button class="arrow right">&#10095;</button>
+      </div>
+      <p>
+        This is a book website that was built with HTML, CSS, Javascript, and Bootstrap. I worked on implementing a navigation bar at the top of the website, implementing a countdown timer, and adding a mystery book genre page.<br><br>
+        Access the project source code in the following link: <a href="https://github.com/Misfeed/JS-Milestone" target="_blank">Book Website</a>
       </p>
     </div>
   </div> 
@@ -79,5 +102,36 @@
     </p>
   </footer>
   <script src="script.js"></script>
+
+  <script>
+    const galleries = [
+      ["images/Vacation-planner-1.jpg", "images/Vacation-planner-2.jpg", "images/Vacation-planner-3.jpg", "images/Vacation-planner-4.jpg", "images/Vacation-planner-5.jpg", "images/Vacation-planner-6.jpg", "images/Vacation-planner-7.jpg"],
+      ["images/Inventory-tracking-1.png", "images/Inventory-tracking-2.png", "images/Inventory-tracking-3.png", "images/Inventory-tracking-4.png", "images/Inventory-tracking-5.png"],
+      ["images/Todo-list-1.png", "images/Todo-list-2.png", "images/Todo-list-3.png"],
+      ["images/Book-website-1.png", "images/Book-website-2.png", "images/Book-website-3.png"]
+    ];
+
+    const sliders = document.querySelectorAll(".slider");
+
+    sliders.forEach((slider, i) => {
+      let index = 0;
+      const images = galleries[i];
+
+      const img = slider.querySelector("img");
+      const next = slider.querySelector(".right");
+      const prev = slider.querySelector(".left");
+
+      next.onclick = () => {
+        index = (index + 1) % images.length;
+        img.src = images[index];
+      };
+
+      prev.onclick = () => {
+        index = (index - 1 + images.length) % images.length;
+        img.src = images[index];
+      };
+    });
+  </script>
+
 </body>
 </html>

@@ -166,58 +166,60 @@ div.emailDiv {
 }
 
 
-/* Resume Page*/
-#resume {
-  margin: 20px;
-  margin-top: 50px;
-  max-width: 700px;
-  font-size: 17px;
-}
+/* Project Page*/
 
-#resume h1 {
-  font-size: 35px;
-  margin-top: 50px;
-}
-
-#skills {
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-}
-
-#resume #links {
-  text-align: center;
-}
-
-#resume a, #first a, #second a {
+.project-block a {
   color: #29b2d4;
 }
-
-/* Project Page*/
 
 #project-main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; 
-  margin-left: 10%;
 }
 
-#first, #second {
+.project-block {
   max-width: 500px;
+  width: 100%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 15px;
 }
 
-#first p, #second p {
-  font-size: 18px;
+.slider {
+  position: relative;
+  max-width: 480px;
+  width: 500px;
+  min-width: 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px;
+
 }
 
-#first img, #second img {
-  width: 400px;
+.arrow {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+
+}
+
+.project-block img {
+  width: 100%;
+  max-width: 400px;
   height: 250px;
 }
+
+.project-block p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
 
 
 /* About Page*/

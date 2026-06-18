@@ -143,8 +143,21 @@
 
 @media (max-width: 820px) {
   /* Navbar Responsive Mode*/
+
   nav {
     font-size: 1rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+    background: #030455;
+  }
+
+  body { 
+     padding-top: 70px;
   }
 
   nav img {
@@ -155,10 +168,10 @@
     display: block;
   }
 
-  .tab{
+  .tab {
     display: none;
-  } 
-  
+  }
+
   .topnav {
     display: flex;
     flex-direction: column;
@@ -166,10 +179,10 @@
   }
 
   .topnav div {
-   position: absolute;
-   right: 50%;
+    position: absolute;
+    right: 50%;
   }
-/*Edit?? topnav div & p*/
+
   .topnav p {
     position: absolute;
     right: 10px;
@@ -222,6 +235,22 @@
   #portrait {
     width: 300px;
     margin: 0;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .project-block {
+    max-width: 300px;
+  }
+
+  .slider {
+    max-width: 300px;
+  }
+
+  .project-block img {
+    max-width: 200px;
+    height: 140px;
   }
 }
 
